@@ -1,0 +1,146 @@
+.header-text {
+    font-size: var(--size-header);
+    font-weight: 700;
+    color: white;
+}
+
+.default-text {
+    font-weight: 500;
+    font-size: var(--size-default);
+    color: white;
+}
+
+.small-text {
+    font-size: var(--size-mini);
+    font-weight: 400;
+    color: #9B9BA8;
+}
+
+.footer-text {
+    font-size: var(--size-mini);
+    font-weight: 500;
+    color: white;
+}
+
+.sing-in {
+    display: flex;
+    padding: 18px 32px;
+    background-color: #29292E;
+    border-radius: 100px;
+    transition: 0.3s;
+    border: 0;
+    height: 100%;
+    align-items: center;
+}
+
+.sing-in:hover, .sing-in_scroll:hover {
+    background-color: #202024;
+}
+
+.description {
+    width: 405px;
+}
+
+.join {
+    display: flex;
+    align-items: center;
+    padding: 18px 32px;
+    gap: 12px;
+    border-radius: 100px;
+    background: #5865F2;
+    transition: 0.3s;
+    justify-content: space-between;
+    border: 0;
+    width: 100%;
+}
+
+.join:hover {
+    background: #434EED;
+}
+
+.scroll {
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: var(--size-default);
+}
+
+.right-s4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header-scroll {
+    background-color: #29292e;
+    padding: 14px 32px;
+}
+
+.sing-in_scroll {
+    border: 0;
+    display: flex;
+    padding: 18px 32px 18px 32px;
+    background-color: #17171A;
+    border-radius: 100px;
+    transition: 0.3s;
+    height: 100%;
+    align-items: center;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.left-s2 {
+    justify-content: flex-start;
+}
+
+.left-s4 {
+    align-items: flex-start;
+}
+
+.header-mobile {
+    display: none;
+}
+
+.header-mobile_scroll {
+    background-color: #29292e!important;
+    padding: 8px 18px;
+    border-radius: 300px;
+}
+
+.header-mobile_open {
+    background-color: #29292E;
+    border-radius: 18px;
+    padding: 8px 18px;
+}
+
+.copyright {
+    text-align: right;
+}
+
+.join-auth {
+    width: 100%;
+    justify-content: center;
+}
+
+.container-auth {
+    justify-content: space-between;
+}
+
+.left-auth {
+    padding: 160px 120px;
+}
+
+.icon-discord {
+    height: 22px;
+}
+
+.text-auth {
+    font-size: var(--size-mini);
+}

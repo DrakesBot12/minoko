@@ -1,0 +1,399 @@
+@import url('/styles/block.css');
+@import url('/styles/elements.css');
+@import url('/styles/modificators.css');
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #404040 #1b1b1d;
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar-track {
+    background: #404040;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #404040;
+    border-radius: 9999px;
+    border: 3px solid #1b1b1d;
+}
+
+:root {
+    --size-header: 60px;
+    --size-default: 25px;
+    --size-mini: 22px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #171719;
+}
+
+b {
+    color: white;
+}
+
+button:hover , a:hover {
+    cursor: pointer;
+}
+
+a, button {
+    appearance: none;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    outline: none;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    :root {
+        --size-header: 40px;
+        --size-default: 12px;
+        --size-mini: 12px;
+    }
+
+    .screen__left, .screen__right {
+        padding: 90px 60px 90px 60px;
+    }
+
+    .header {
+        top: 20px;
+        left: 60px;
+        right: 60px;
+    }
+
+    .logo-text {
+        font-size: 16px;
+    }
+
+    .header-scroll {
+        padding: 8px 20px;
+    }
+
+    .header__logo-container, .texts {
+        gap: 10px;
+    }
+
+    .header__links {
+        gap: 32px;
+    }
+
+    .header__links__link, .header__links__button {
+        gap: 6px;
+    }
+
+    .screen__left__container__block__buttons {
+        gap: 14px;
+    }
+
+    .screen__left__container {
+        display: flex;
+        gap: 26px;
+        flex-direction: column;
+    }
+
+    .screen__left__container__block {
+        gap: 32px;
+    }
+
+    .screen__right__container {
+        gap: 26px;
+    }
+
+    .link {
+        gap: 14px;
+    }
+
+    .sing-in, .sing-in_scroll, .join {
+        padding: 12px 20px 12px 20px;
+        gap: 6px;
+    }
+
+    .scroll {
+        gap: 14px;
+    }
+
+    .icon-logo {
+        height: 25px;
+    }
+
+    .icon-header {
+        height: 14px;
+    }
+
+    .icon-discord {
+        height: 14px;
+    }
+
+    .icon {
+        height: 20px;
+    }
+
+    .circle-div {
+        width: 400px;
+        height: 400px;
+        border-width: 18px;
+        right: -200px;
+    }
+
+    .description {
+        width: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --size-header: 32px;
+    }
+
+    .header {
+        top: 14px;
+        left: 30px;
+        right: 30px;
+    }
+
+    .logo-text {
+        font-size: 14px;
+    }
+
+    .header-scroll {
+        padding: 6px 16px;
+    }
+
+    .screen__left, .screen__right {
+        padding: 80px 40px;
+        overflow: hidden;
+    }
+
+    .letf-s1 {
+        justify-content: space-between;
+    }
+
+    .header__logo-container, .texts {
+        gap: 8px;
+    }
+
+    .screen__left__container {
+        gap: 20px;
+    }
+
+    .screen__left__container__block {
+        gap: 26px;
+    }
+
+    .screen__left__container__block__buttons {
+        gap: 12px;
+    }
+
+    .screen__right__container {
+        gap: 20px;
+    }
+
+    .sing-in, .sing-in_scroll, .join {
+        padding: 10px 16px;
+    }
+
+    .icon-logo {
+        height: 20px;
+    }
+
+    .icon-header {
+        height: 10px;
+    }
+
+    .icon {
+        height: 16px;
+    }
+
+    .scroll {
+        gap: 12px;
+    }
+
+    .description {
+        width: 260px;
+    }
+
+    .circle-div {
+        width: 300px;
+        height: 300px;
+        border-width: 14px;
+        right: -150px;
+    }
+}
+
+@media (max-width: 520px) {
+    :root {
+        --size-header: 32px;
+    }
+
+    .screen-s1 {
+        height: auto;
+    }
+
+    .left-s1, .right-s1 {
+        height: 50vh;
+        justify-content: space-between;
+    }
+    
+    .right-s4 {
+        gap: 80px;
+    }
+
+    .screen-s1, .screen-s3 {
+        flex-direction: column-reverse;
+    }
+
+    .screen-s2, .screen-s4 {
+        flex-direction: column;
+    }
+
+    .screen__left, .screen__right {
+        width: 100%;
+        padding: 40px 80px;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .header-mobile {
+        display: flex;
+    }
+
+    .header-mobile__links {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .icon-logo {
+        width: 26px;
+        height: 26px;
+    }
+
+    .icon-header, .icon-discord, .icon {
+        height: 16px;
+    }
+
+    .sing-in, .join, .sing-in_scroll {
+        padding: 12px 18px;
+        gap: 6px;
+    }
+
+    .logo-text {
+        font-size: 16px;
+    }
+
+    .circle-div {
+        right: auto;
+    }
+
+    .scroll {
+        gap: 14px;
+    }
+
+    .screen__left__container {
+        gap: 20px;
+    }
+
+    .screen__left__container__block {
+        gap: 42px;
+    }
+
+    .screen__left__container__block__buttons {
+        gap: 14px;
+    }
+
+    .left-s4 > .screen__left__container > .texts {
+        gap: 4px;
+    }
+
+    .description {
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    :root {
+        --size-header: 28px;
+    }
+
+    .header-mobile {
+        top: 20px;
+        left: 40px;
+        right: 40px;
+    }
+
+    .header-mobile__links {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 28px;
+    }
+
+    .screen__left, .screen__right {
+        width: 100%;
+        padding: 40px;
+        gap: 10px;
+    }
+
+    .logo-text {
+        font-size: 14px;
+    }
+
+    .icon-discord {
+        height: 14px;
+    }
+
+    .right-s4 {
+        gap: 60px;
+    }
+
+    .sing-in, .join, .sing-in_scroll {
+        padding: 10px 14px;
+        gap: 6px;
+    }
+
+    .texts {
+        gap: 8px;
+    }
+
+    .scroll {
+        gap: 14px;
+    }
+
+    .circle-div {
+        width: 200px;
+        height: 200px;
+    }
+
+    .screen__left__container {
+        gap: 16px;
+    }
+
+    .screen__left__container__block {
+        gap: 26px;
+    }
+
+    .screen__left__container__block__buttons {
+        justify-content: space-between;
+    }
+
+    .left-s4 > .screen__left__container > .texts {
+        gap: 4px;
+    }
+
+    .left-s4 > .screen__right__container {
+        gap: 20px;
+    }
+
+    .screen__right__container {
+        gap: 16px;
+    }
+}

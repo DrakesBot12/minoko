@@ -1,0 +1,147 @@
+.screen__left, .screen__right {
+    overflow: hidden;
+    position: relative
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    position: fixed;
+    top: 30px;
+    left: 120px;
+    right: 120px;
+    z-index: 999;
+    border-radius: 300px;
+    transition: 0.3s;
+    align-items: center;
+}
+
+.header__logo-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.header__links {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.header__links__link {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Screen */
+
+.screen {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+.screen-s1 {
+    height: 100vh;
+}
+
+/* Left */
+.screen__left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 140px 120px 140px 120px;
+    background-color: #1b1b1d;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen__left__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 42px;
+}
+
+.screen__left__container__block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 48px;
+}
+
+.screen__left__container__block__buttons {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    
+}
+
+/* Right */
+
+.screen__right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 140px 120px 140px 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen__right__container {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    width: 100%;
+}
+
+.circle-div {
+    display: flex;
+    width: 610px;
+    height: 610px;
+    border-radius: 1000px;
+    border: 28px solid #FF002B;
+    background-color: transparent;
+    position: absolute;
+    right: -250px;
+}
+
+/* Mobile Adaptive | Header */
+
+.header-mobile {
+    color: white;
+    position: fixed;
+    top: 26px;
+    left: 80px;
+    right: 80px;
+    z-index: 999;
+    transition: 0.3s;
+    align-items: center;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.header-mobile__container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-mobile__container__logo-container {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.header-mobile__links {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
